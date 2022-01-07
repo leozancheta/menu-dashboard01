@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="./style-menu.css" rel="stylesheet">
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400&display=swap" rel="stylesheet">
+
+    <title>Menu Dashboard</title>
+</head>
+
+<body>
+    <div class="nav-bar-body">
+        <ul>
+            <p>Nav Bar</p>
+            <li class="active"><img src="./assets/category.png" alt="categorias">Home</li>
+            <li><img src="./assets/live.png" alt="Live">Live</li>
+            <li><img src="./assets/scoreboard (1).png" alt="Score">Score</li>
+            <li><img src="./assets/setting.png" alt="Setting">Setting</li>
+            <li><img src="./assets/notification.png" alt="Notification">Notification</li>
+            <li><img src="./assets/search.png" alt="Search">Search</li>
+            <li><img src="./assets/profile.png" alt="Profile">Profile</li>
+        </ul>
+    </div>
+</body>
+<script>
+    let items = document.querySelectorAll('li');
+
+    items.forEach(item => {
+        item.addEventListener('click', ()=> {
+            items.forEach(item => item.classList.remove('active'))
+            item.classList.add('active')
+        })
+    });
+
+
+</script>
+</html>
